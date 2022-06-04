@@ -1,6 +1,27 @@
+@media (max-width: 1100px) {
+    .carousel {
+        .prev {
+            left:0;
+        }
+        .next {
+            right: 0;
+        }
+    }
+}
+
 @media (max-width: 992px) {
     .container {
         padding: 0 15px;
+    }
+    .carousel {
+        .prev {
+            left: 40%;
+            top: -9%;
+        }
+        .next {
+            right: 40%;
+            top: -9%;
+        }
     }
 }
 
@@ -98,7 +119,26 @@
             margin: 36px auto;
         }
     }
+    .carousel {
+        .prev {
+            display: none;
+        }
+        .next {
+            display: none;
+        }
+        .tns-item {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .catalog {
+        &__tab {
+            width: 170px;
+        }
+    }
 }
+
 @media(max-width: 576px){
     .container {
         padding: 0px 10px;
@@ -164,6 +204,12 @@
         &_submit {
             width: 100%;
             font-size: 18px;
+        }
+    }
+    .catalog {
+        &__tabs {
+            flex-wrap: wrap;
+            gap: 10px;
         }
     }
 }
