@@ -2,12 +2,12 @@
     padding-bottom: 100px;
     &__tabs {
         margin-top: 70px;
-        list-style: none;
+        list-style-type: none;
         display: flex;
         justify-content: center;
+        align-items: center;
         margin-bottom: 0;
         padding-left: 0;
-
     }
     &__tab {
         width: 220px;
@@ -22,9 +22,9 @@
         transform: skewX(-25deg);
         margin: 0 5px;
         cursor: pointer;
-        transition: 0.5s;
+        transition: 0.5s all;
         &:hover {
-            box-shadow: 3px 3px 20px;
+            box-shadow: 3px 3px 20px $main-color;
             border: none;
         }
         div {
@@ -37,10 +37,10 @@
         }
     }
     &__content {
-        display: none;
-        justify-content: space-around;
-        flex-wrap: wrap;
         margin-top: 60px;
+        display: none;
+        justify-content: space-between;
+        flex-wrap: wrap;
         &_active {
             display: flex;
         }
@@ -70,6 +70,7 @@
             color: #0d0d0d;
             font-size: 14px;
             font-weight: 300;
+            text-align: center;
         }
         &__link {
             display: block;
@@ -78,13 +79,14 @@
             font-size: 14px;
             font-weight: 500;
             text-decoration: underline;
-            text-transform: uppercase;
             text-align: center;
+            text-transform: uppercase;
             &:hover {
                 color: $main-color;
             }
         }
         hr {
+            background-color: #e8e8e8;
             margin-top: 19px;
             margin-bottom: 21px;
             border-bottom: none;
@@ -111,7 +113,7 @@
         }
         &__content {
             width: 50%;
-            margin-right: 0;
+            margin-right: 0px;
             transform: translateX(-100%);
             transition: 0.5s all;
             &_active {
@@ -120,18 +122,18 @@
             }
         }
         &__list {
-            margin-left: 0;
-            padding-right: 20px;
+            position: relative;
             width: 50%;
+            margin-left: 20px;
             transform: translateX(0%);
+            padding-right: 20px;
             transition: 0.5s all;
             padding-left: 19px;
             margin-bottom: 0;
-            list-style: none;
-            position: relative;
+            list-style-type: none;
             &_active {
                 transform: translateX(-100%);
-                margin-right: 20px;
+                margin-left: 0px;
             }
             li {
                 position: relative;
@@ -140,7 +142,7 @@
                 font-weight: 300;
                 margin-bottom: 20px;
                 &:before {
-                    content: "";
+                    content: '';
                     position: absolute;
                     width: 5px;
                     height: 5px;

@@ -10,7 +10,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
         max-width: 238px;
     }
     &__subtitle {
@@ -26,9 +25,8 @@
         font-weight: 300;
         text-align: center;
         a {
-        color: red;
-        text-decoration: underline;
+            color: #ff0000;
+            text-decoration: underline;
         }
     }
 }
-
