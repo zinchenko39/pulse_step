@@ -212,6 +212,37 @@
             gap: 10px;
         }
     }
+    .feedback {
+        &-item {
+            flex-wrap: wrap;
+            &:nth-child(1) {
+                margin-top: 40px !important; 
+            }
+            img {
+                margin: 0 auto;
+            }
+            &__descr {
+                margin-top: 20px;
+            }
+            &__name {
+                text-align: center;
+            }
+            &__marathone {
+                text-align: center;
+            }
+        }
+    }
+    .footer {
+        &__info {
+            width: 300px;
+            padding: 25px 40px 25px 40px;
+        }
+        &__adr {
+            font-size: 23px;
+            line-height: 25px;
+            margin-bottom: 30px;
+        }
+    }
 }
 @media(max-width: 320px) {
     .consultation {
@@ -229,5 +260,13 @@
     }
     .feed-form {
         width: 100%;
+    }
+    .footer {
+        &__info {
+            width: 270px;
+        }
+        &__adr {
+            line-height: 28px;
+        }
     }
 }
