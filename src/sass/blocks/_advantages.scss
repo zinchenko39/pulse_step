@@ -30,5 +30,26 @@
         text-decoration: underline;
         }
     }
+    &__icon {
+        &_animated-heart {
+                animation: heartbeat 1.5s ease infinite;
+                
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+        &_animated-cup {
+            animation: jump 1s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+        &_animated-shoe {
+            animation: kick 3s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
 }
 

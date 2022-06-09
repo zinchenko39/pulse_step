@@ -170,4 +170,6 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     })
 
+    //Animation
+    new WOW().init();
 }); //---> DOMContentLoaded
